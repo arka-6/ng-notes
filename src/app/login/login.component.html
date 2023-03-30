@@ -1,35 +1,11 @@
-<div class="login">
-  <div class="avatar">
-    <span class="material-symbols-outlined size-20"> person </span>
-  </div>
-  <div class="button-box">
-    <div class="btn-toggler" id="btn-toggle"></div>
-    <button type="button" class="toggle-btn" onclick="toggleLoginForm(false)">
-      Login
-    </button>
-    <button type="button" class="toggle-btn" onclick="toggleLoginForm(true)">
-      Register
-    </button>
-  </div>
-  <form class="login-form" id="loginForm">
-    <div class="textbox">
-      <input id="name" type="text" placeholder="Name" />
-      <span class="material-symbols-outlined"> person </span>
-    </div>
-    <div class="textbox">
-      <input id="email" type="email" placeholder="Email" />
-      <span class="material-symbols-outlined"> mail </span>
-    </div>
-    <div class="textbox">
-      <input id="password" type="password" placeholder="Password" />
-      <span class="material-symbols-outlined"> lock </span>
-    </div>
-    <div class="agreement-container">
-      <input type="checkbox" name="agree" id="agree" />
-      <span class="change-conainer">I agree to the terms & conditions</span>
-    </div>
-    <button type="submit" id="loginSubmitBtn">LOGIN</button>
-    <a routerLink="/forgot-password">Forgot your credentials?</a>
-    <!-- <a href="https://github.com/arka-6">Forgot your credentials?</a> -->
-  </form>
-</div>
+<h1>Login</h1>
+<form>
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username" /><br /><br />
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" />
+  <a href="/forgot-password">Forgot Password?</a><br /><br />
+  <input type="submit" value="Login" />
+</form>
+<br />
+<p>Not Registered? <a routerLink="/register">Register Here</a></p>
